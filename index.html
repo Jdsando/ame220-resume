@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+  * {
+  	font-family: Arial, sans;
+  	box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  }
+  body {
+    background-color: linen;
+  }
+
+  table, img, a {
+    margin-left: 40px;
+  }
+
+  h1, h2, th {
+    color: maroon;
+    margin-left: 40px;
+  }
+
+  p, tr, ol, ul{
+    color: tomato;
+    margin-left: 40px;
+  }
+  #container {
+      width: 50%;
+  }
+  #accordion input {
+  	display: none;
+  }
+  #accordion label {
+  	background: #eee;
+  	border-radius: .25em;
+  	cursor: pointer;
+  	display: block;
+  	margin-bottom: .125em;
+  	padding: .25em 1em;
+  	z-index: 20;
+  }
+  #accordion label:hover {
+  	background: #ccc;
+  }
+
+  #accordion input:checked + label {
+  	background: #ccc;
+  	border-bottom-right-radius: 0;
+  	border-bottom-left-radius: 0;
+  	color: white;
+  	margin-bottom: 0;
+  }
+  #accordion article {
+  	background: #f7f7f7;
+  	height:0px;
+  	overflow:hidden;
+  	z-index:10;
+  }
+  #accordion article p {
+  	padding: 1em;
+  }
+  #accordion input:checked article {
+  }
+  #accordion input:checked ~ article {
+  	border-bottom-left-radius: .25em;
+  	border-bottom-right-radius: .25em;
+  	height: auto;
+  	margin-bottom: .125em;
+  }
+  </style>
+<title>Resume</title>
+</head>
+
+<body>
+
+<h1>Jordan Sandoval</h1>
+<p></p>
+<img src="IMG_0488.jpg" alt="Jordan Sandoval" width="116" height="87" style="transform:rotate(90deg);">
+<p></p>
+<a href="tel:623-313-6174">623-313-6174</a>
+<p></p>
+<a href="https://goo.gl/maps/kHsLNKbp18sJNPnn7">12555 W Lisbon Ln, El Mirage, AZ</a>
+<p></p>
+<a href="mailto:jdsando2@asu.edu">jdsando2@asu.edu</a>
+
+<h2>Objective</h2>
+<p>Current student looking for a structured work environment, where I can apply my interpersonal and technical skills to serve customers.</p>
+
+<div id="container">
+<h2>Education</h2>
+<section id="accordion">
+			<div>
+				<input type="checkbox" id="check-1" />
+				<label for="check-1">Expand</label>
+				<article>
+          <table style="width:50%">
+            <tr>
+              <th>School Name</th>
+              <th>Year</th>
+            </tr>
+          <tr>
+            <td>Imagine Rosefield</td>
+            <td>2005-2011</td>
+          </tr>
+          <tr>
+            <td>Sonoran Heights</td>
+            <td>2011-2013</td>
+          </tr>
+          <tr>
+            <td>Willow Canyon</td>
+            <td>2013-2015</td>
+          </tr>
+          <tr>
+            <td>Connections Academy</td>
+            <td>2015-2017</td>
+          </tr>
+          <tr>
+            <td>Arizona State University</td>
+            <td>2017-Present</td>
+          </tr>
+          </table>
+        </article>
+			</div>
+
+<h2>Experience</h2>
+<section id="accordion">
+			<div>
+				<input type="checkbox" id="check-2" />
+				<label for="check-2">Expand</label>
+				<article>
+          <ol>
+            <li>McDonalds - Cook burger patties and construct burgers, operate friers to fry french fries.</li>
+            <li>Janitor (Pentagon) - Sanitate restrooms at the Pentagon, mop floors, respond to and sanitize emergency messes.</li>
+            <li>President of the United States - Be the president, run the country.</li>
+          </ol>
+        </article>
+			</div>
+
+<h2>References</h2>
+<section id="accordion">
+			<div>
+				<input type="checkbox" id="check-3" />
+				<label for="check-3">Expand</label>
+				<article>
+          <ul>
+            <li>Ronald Mcdonald - ronaldthedonald@gmail.com</li>
+            <li>John Cia - nothecia@gmail.com</li>
+            <li>Bill President - potusthegotus@gmail.com</li>
+          </ul>
+        </article>
+			</div>
+
+</body>
+</html>
