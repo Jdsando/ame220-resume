@@ -1,155 +1,288 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <style>
-  * {
-  	font-family: Arial, sans;
-  	box-sizing: border-box;
-  	-moz-box-sizing: border-box;
-  }
-  body {
-    background-color: linen;
-  }
 
-  table, img, a {
-    margin-left: 40px;
-  }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  h1, h2, th {
-    color: maroon;
-    margin-left: 40px;
-  }
+  <title>Resume - Jdsando</title>
 
-  p, tr, ol, ul{
-    color: tomato;
-    margin-left: 40px;
-  }
-  #container {
-      width: 50%;
-  }
-  #accordion input {
-  	display: none;
-  }
-  #accordion label {
-  	background: #eee;
-  	border-radius: .25em;
-  	cursor: pointer;
-  	display: block;
-  	margin-bottom: .125em;
-  	padding: .25em 1em;
-  	z-index: 20;
-  }
-  #accordion label:hover {
-  	background: #ccc;
-  }
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  #accordion input:checked + label {
-  	background: #ccc;
-  	border-bottom-right-radius: 0;
-  	border-bottom-left-radius: 0;
-  	color: white;
-  	margin-bottom: 0;
-  }
-  #accordion article {
-  	background: #f7f7f7;
-  	height:0px;
-  	overflow:hidden;
-  	z-index:10;
-  }
-  #accordion article p {
-  	padding: 1em;
-  }
-  #accordion input:checked article {
-  }
-  #accordion input:checked ~ article {
-  	border-bottom-left-radius: .25em;
-  	border-bottom-right-radius: .25em;
-  	height: auto;
-  	margin-bottom: .125em;
-  }
-  </style>
-<title>Resume</title>
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body id="page-top">
 
-<h1>Jordan Sandoval</h1>
-<p></p>
-<img src="IMG_0488.jpg" alt="Jordan Sandoval" width="116" height="87" style="transform:rotate(90deg);">
-<p></p>
-<a href="tel:623-000-0000">623-000-0000</a>
-<p></p>
-<a href="https://goo.gl/maps/pz12BJ59bDq2KUgL8">12345 Desert Rd, Phoenix, AZ</a>
-<p></p>
-<a href="mailto:jdsando2@asu.edu">jdsando2@asu.edu</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Jordan Sandoval</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<h2>Objective</h2>
-<p>Current student looking for a structured work environment, where I can apply my interpersonal and technical skills to serve customers.</p>
+  <div class="container-fluid p-0">
 
-<div id="container">
-<h2>Education</h2>
-<section id="accordion">
-			<div>
-				<input type="checkbox" id="check-1" />
-				<label for="check-1">Expand</label>
-				<article>
-          <table style="width:50%">
-            <tr>
-              <th>School Name</th>
-              <th>Year</th>
-            </tr>
-          <tr>
-            <td>Imagine Rosefield</td>
-            <td>2005-2011</td>
-          </tr>
-          <tr>
-            <td>Sonoran Heights</td>
-            <td>2011-2013</td>
-          </tr>
-          <tr>
-            <td>Willow Canyon</td>
-            <td>2013-2015</td>
-          </tr>
-          <tr>
-            <td>Connections Academy</td>
-            <td>2015-2017</td>
-          </tr>
-          <tr>
-            <td>Arizona State University</td>
-            <td>2017-Present</td>
-          </tr>
-          </table>
-        </article>
-			</div>
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Jordan
+          <span class="text-primary">Sandoval</span>
+        </h1>
+        <div class="subheading mb-5">Desert Rd · Phoenix, AZ 12345 · (623) 000-0000 ·
+          <a href="mailto:jdsando2@asu.edu">jdsando2@asu.edu</a>
+        </div>
+        <p class="lead mb-5">Current student looking for a structured work environment, where I can apply my interpersonal and technical skills to serve customers.</p>
+        <div class="social-icons">
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
-<h2>Experience</h2>
-<section id="accordion">
-			<div>
-				<input type="checkbox" id="check-2" />
-				<label for="check-2">Expand</label>
-				<article>
-          <ol>
-            <li>McDonalds - Cook burger patties and construct burgers, operate friers to fry french fries.</li>
-            <li>Janitor (Pentagon) - Sanitate restrooms at the Pentagon, mop floors, respond to and sanitize emergency messes.</li>
-            <li>President of the United States - Be the president, run the country.</li>
-          </ol>
-        </article>
-			</div>
+    <hr class="m-0">
 
-<h2>References</h2>
-<section id="accordion">
-			<div>
-				<input type="checkbox" id="check-3" />
-				<label for="check-3">Expand</label>
-				<article>
-          <ul>
-            <li>Ronald Mcdonald - ronaldthedonald@gmail.com</li>
-            <li>John Cia - nothecia@gmail.com</li>
-            <li>Bill President - potusthegotus@gmail.com</li>
-          </ul>
-        </article>
-			</div>
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Fry Cook</h3>
+            <div class="subheading mb-3">McDonald's</div>
+            <p>Cook burger patties and construct burgers, operate friers to fry french fries.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2013 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Janitor</h3>
+            <div class="subheading mb-3">The Pentagon</div>
+            <p>Sanitate restrooms at the Pentagon, mop floors, respond to and sanitize emergency messes.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">December 2011 - March 2013</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">The President of the United States</h3>
+            <div class="subheading mb-3">The White House</div>
+            <p>Be the president, run the country.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">July 2010 - December 2011</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Arizona State University</h3>
+            <div class="subheading mb-3">Digital Culture (Art)</div>
+            <p>GPA: 70.00</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2017 - May 2021</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Connections Academy</h3>
+            <div class="subheading mb-3">Online School</div>
+            <p>GPA: 81232.00</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2016 - May 2017</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-angular"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-sass"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-less"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-wordpress"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-gulp"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-grunt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+        </ul>
+
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Mobile-First, Responsive Design</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Browser Testing &amp; Debugging</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Functional Teams</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Agile Development &amp; Scrum</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>I am a super cool dude and I am trying to get a good grade in this class. I have utilized a free bootstrap to create this resume page for the class.</p>
+        <p class="mb-0">I enjoyed a lot of the things that I learned in this class. I hope this resume turns out well. :)</p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Awards &amp; Certifications (Not Real)</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Google Analytics Certified Developer</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Mobile Web Specialist - Google Certification</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            2<sup>nd</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - James Buchanan High School - Hackathon 2006</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            3<sup>rd</sup>
+            Place - James Buchanan High School - Hackathon 2005</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
 
 </body>
+
 </html>
